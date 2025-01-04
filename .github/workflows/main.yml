@@ -74,42 +74,6 @@ jobs:
             branch: ${{ github.ref }}
             atomic: false
 
-
-  bin:
-    name: "Sync bin folder"
-    runs-on: ubuntu-latest
-    steps:
-        - name: Checkout repo
-          uses: actions/checkout@v4
-          with:
-            lfs: true
-            token: ${{ secrets.WORKFLOW_TOKEN }}
-    
-        - name: Download bin folder from FTP
-          uses: joutvhu/ftp-transfer@v1
-          with:
-            host: ${{secrets.FTP_HOST}}
-            port: 21
-            username: ${{secrets.FTP_USERNAME}}
-            password: ${{secrets.FTP_PASSWORD}}
-            commands: |
-              get ./bin /home/runner/work/left4dead2/left4dead2/bin 
-              
-        - name: Commit files
-          run: |
-            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
-
-            git add .
-            git commit -m "Add changes in bin"
-
-        - name: Push changes
-          uses: ad-m/github-push-action@master
-          with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            branch: ${{ github.ref }}
-            atomic: false
-
   platform:
     name: "Sync platform folder"
     runs-on: ubuntu-latest
