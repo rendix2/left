@@ -20,7 +20,7 @@ jobs:
             username: ${{secrets.FTP_USERNAME}}
             password: ${{secrets.FTP_PASSWORD}}
             commands: |
-              get . /home/runner/work/left4dead2/left4dead2 
+              get ./ /home/runner/work/left4dead2/left4dead2 
               
         - name: Commit files
           run: |
