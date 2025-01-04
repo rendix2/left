@@ -1,0 +1,55 @@
+"bugreporter_text"
+{
+	"bug_directory"		"u:\bugs"
+
+	"Names"
+	{
+		"Robin"		"1"
+		"Tom"		"1"
+		"Steve"		"1"
+		"Jay"		"1"
+	}
+	
+	"Severity"
+	{
+		"Showstopper"	"1"
+		"High"		"1"
+		"Medium"	"1"
+		"Low"		"1"
+		"Zero"		"1"
+		"Regression"	"1"
+	}
+
+	"Report Type"
+	{
+		"Bug"			"1"
+		"Feature Request"	"1"
+	}
+
+	"Area"
+	{
+		"Dark Messiah"		"1"
+	}
+
+	"Priority"
+	{
+		"Gold Master"	"1"
+		"High"		"1"
+		"Medium"	"1"
+		"Low"		"1"
+	}
+
+
+
+
+	"Area@Dir%Map"
+	{
+		"ignorethis"		"1"
+	}
+
+	"Map Number"
+	{
+		"ignorethis"		"1"
+	}
+	
+}

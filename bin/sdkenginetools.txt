@@ -1,0 +1,7 @@
+"enginetools"
+{
+	"library"	"tools/vmt.dll"
+	"library"	"tools/commedit.dll"
+	"library"	"tools/pet.dll"
+	"library"	"tools/entplacement.dll"
+}
